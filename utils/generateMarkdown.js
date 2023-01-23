@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license){
-  return `\n*[License](#License)`;}
+  return `\n 1. [License](#License)`;}
   else {return ''}
 }
 
@@ -27,9 +27,9 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const badge = renderLicenseBadge(data.lic)
   const license = renderLicenseLink(data.lic)
-  renderLicenseSection(data.lic)
+  const licSec = renderLicenseSection(data.lic)
 
- const feedback = 
+ return(
 `# ${data.repo}
 ${badge}
   
@@ -42,13 +42,13 @@ ${badge}
   
 ## Table of Contents (Optional)
   
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)${license}
-  - [Badges](#badges)
-  - [Features](#features)
-  - [Contribute](#contribute)
-  - [Tests](#tests)
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Credits](#credits)${license}
+  4. [Badges](#badges)
+  5. [Features](#features)
+  6. [Contribute](#contribute)
+  7. [Tests](#tests)
 
 ## Installation
 
@@ -63,6 +63,8 @@ ${data.use}
 ${data.collab}
   
 ${data.thrdP}
+
+${licSec}
    
 ## Badges
   
@@ -78,10 +80,7 @@ ${data.feat}
 
 ## Tests
   
-${data.test}`;
-
-console.log("last", feedback)
-return feedback
+${data.test}`);
 }
 
 module.exports = generateMarkdown;
