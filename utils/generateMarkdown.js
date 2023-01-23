@@ -68,7 +68,7 @@ ${licSec}
    
 ## Badges
   
-![${data.repo}](https://img.shields.io/github/languages/top/${data.username}/${data.repo})
+![${data.repo}](https://img.shields.io/github/languages/top/${data.uName}/${data.repo})
     
 ## Features
   
