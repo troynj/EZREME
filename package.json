@@ -1,0 +1,23 @@
+{
+  "name": "ezreme",
+  "version": "1.0.0",
+  "description": "https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troynj/EZREME.git"
+  },
+  "keywords": [],
+  "author": "Troy Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/troynj/EZREME/issues"
+  },
+  "homepage": "https://github.com/troynj/EZREME#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
