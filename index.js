@@ -11,9 +11,9 @@ const qArr = [
   "why did you build this project?",
   "what problem does it solve?",
   "what did you learn?",
-  "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. (separate with commas):",
+  "add a picture to showcase your application (enter the relative file path):",
+  "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running:",
   "Provide instructions and examples for use:",
-  "Add a gif to your explanation:",
   "List your collaborators, if any, with links to their GitHub profiles:",
   "If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.",
   "If you followed tutorials, include links to those here as well.",
@@ -61,15 +61,15 @@ function init() {
         message: qArr[6],
       },
       {
-        name: "install",
-        message: qArr[7],
+        name: "pic",
+        message: qArr[7]
       },
       {
-        name: "use",
+        name: "install",
         message: qArr[8],
       },
       {
-        name: "gif",
+        name: "use",
         message: qArr[9],
       },
       {
@@ -99,7 +99,7 @@ function init() {
       {
         name: "test",
         message: qArr[16],
-      },
+      }
     ])
     .then((res) => {
       writeToFile("newRM.md", generateMarkdown(res))

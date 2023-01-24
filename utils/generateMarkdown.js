@@ -50,6 +50,8 @@ ${badge}
   6. [Contribute](#contribute)
   7. [Tests](#tests)
 
+  ![Screenshot](${data.pic})
+
 ## Installation
 
 ${data.install}
